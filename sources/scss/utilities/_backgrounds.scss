@@ -1,0 +1,16 @@
+// Background Image
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+// Desktop only
+html:not(.tablet):not(.mobile) {
+  .bg-fixed {
+    @include media-breakpoint-up(lg) {
+      background-attachment: fixed;
+    }
+  }
+}

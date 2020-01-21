@@ -1,0 +1,30 @@
+// Fonts
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$font-family-base: $font-family-sans-serif;
+
+// Base fonts
+$font-size-body: 15px;
+$fw-base: 400;
+$lh-base: $font-size-body * 1.2;
+
+// Grid breakpoints
+$grid-breakpoints: (
+   xs: 0,
+   sm: 576px,
+   md: 768px,
+   lg: 992px,
+   xl: 1200px
+);
+
+// Grid containers
+$container-max-widths: (
+   sm: 540px,
+   md: 720px,
+   lg: 960px,
+   xl: 1200px
+);
+
+// Grid columns
+$grid-columns: 12;
+$grid-gutter-width: 20px;
