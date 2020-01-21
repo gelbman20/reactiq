@@ -54,14 +54,14 @@
     &:empty { margin: 0; }
     max-width: 160px;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
 
     @include media-breakpoint-up(sm) {
       max-width: 210px;
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 40px;
+      margin-right: 40px;
     }
   }
 }
