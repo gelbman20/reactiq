@@ -1,0 +1,53 @@
+extends ../_skeleton
+
+block variables
+  - pageName = 'Reactic'
+
+block page
+  .popup-wrapper
+    .popup-inner.bg-image(style='background-image: url(images/bg.png)')
+      .popup.empty
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content
+      br
+      br
+      .popup.active
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content  Checking your username...
+      br
+      br
+      .popup.active
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content  Hi
+              =" "
+              span.nick-name.text-bold reactiq-dev
+              br
+              =" "
+              |  your matches are now tracked
+
+      br
+      br
+      .popup
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content  Checking your username...
+      br
+      br
+      .popup
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content  Hi
+              =" "
+              span.nick-name.text-bold reactiq-dev
+              br
+              =" "
+              |  your matches are now tracked
+
