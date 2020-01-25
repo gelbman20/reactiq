@@ -1,0 +1,12 @@
+h5 {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.big {
+  display: inline-block;
+  font-size: 20px;
+}
+
+h5 + .big { margin-top: 5px; }

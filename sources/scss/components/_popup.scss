@@ -65,3 +65,16 @@
     }
   }
 }
+
+.popup-sm {
+  width: 298px;
+  transform: translateX(66%);
+
+  .popup-content {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

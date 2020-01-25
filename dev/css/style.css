@@ -862,6 +862,21 @@ body {
   html:not(.tablet):not(.mobile) .bg-fixed {
     background-attachment: fixed; } }
 
+.color-green {
+  color: #299F00; }
+
+h5 {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700; }
+
+.big {
+  display: inline-block;
+  font-size: 20px; }
+
+h5 + .big {
+  margin-top: 5px; }
+
 .popup {
   display: inline-block;
   width: 280px;
@@ -910,6 +925,16 @@ body {
         max-width: 210px;
         margin-left: 40px;
         margin-right: 40px; } }
+
+.popup-sm {
+  width: 298px;
+  transform: translateX(66%); }
+  .popup-sm .popup-content {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px; }
 
 /** @section Responsive units */
 .unit {
