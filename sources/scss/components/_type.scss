@@ -25,6 +25,10 @@ h6 {
   }
 }
 
+.medium {
+  font-size: 18px;
+}
+
 .big {
   display: inline-block;
   font-size: 18px;
@@ -35,3 +39,20 @@ h6 {
 }
 
 h5 + .big { margin-top: 5px; }
+
+.link {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: underline;
+  transition: .3s ease-out all;
+
+  &, &:focus, &:active {
+    color: $blue;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+* + .link { margin-top: 12px; }

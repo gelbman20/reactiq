@@ -1,0 +1,37 @@
+extends ../_skeleton
+
+block variables
+  - pageName = 'Math Ended'
+
+block page
+  .popup-wrapper
+    .popup-inner.bg-image(style='background-image: url(images/bg-02.png); min-height: 140vh')
+      br
+      .popup.popup-lg
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content
+              h5 Match ended - Summary
+              a.link(href='#') View challange results
+        .popup-sum
+          -
+            totalSammary = [
+              { title: 'position', count: '#83', className: 'color-olive' },
+              { title: 'kills', count: 12, className: 'color-sangria' },
+              { title: 'damage', count: 8352, className: 'color-purple' }
+            ]
+          .popup-table.text-center
+            each item in totalSammary
+              .popup-table-cell
+                .popup-table-cell-count
+                  span(class=item.className)= item.count
+                .popup-table-cell-title
+                  span= item.title
+          .popup-summary.text-center
+            h6 Challange summary
+            ul.list.medium
+              li Total - #[span.text-bold.color-sangria 25 kills]
+              li Time left: #[span.text-bold 12 minutes]
+          .popup-footer.text-center
+            img(src="images/banner-01-300x250.jpg", width="300", height="250", alt="overwolf banner")

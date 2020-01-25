@@ -1,0 +1,50 @@
+.page-header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  font-size: 0;
+  line-height: 0;
+
+  &-nav {
+    margin-left: -15px;
+    margin-bottom: -15px;
+
+    li {
+      display: inline-block;
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 7px 16px;
+      font-size: 14px;
+      line-height: 1.2;
+      border: 1px solid;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: .3s ease-out all;
+
+      &, &:focus, &:active {
+        color: $white;
+        background-color: $black;
+        border-color: $black;
+      }
+
+      &.active,
+      &:hover {
+
+      }
+    }
+
+    li.active a,
+    a:hover {
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}

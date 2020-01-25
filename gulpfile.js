@@ -19,6 +19,7 @@ const path = {
   },
   pug: {
     src: "sources/pug/pages/*.pug",
+    srcChange: "sources/pug/**/*.pug",
     dest: "dev/"
   }
 };
@@ -60,7 +61,7 @@ function watch() {
       baseDir: './dev'
     }
   });
-  gulp.watch(path.pug.src, pugTask);
+  gulp.watch(path.pug.srcChange, pugTask);
   gulp.watch(path.styles.src, style);
   gulp.watch(path.html.src, reload)
 }
