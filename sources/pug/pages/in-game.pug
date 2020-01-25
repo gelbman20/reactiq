@@ -5,18 +5,13 @@ block variables
 
 block page
   .popup-wrapper
-    .popup-inner.bg-image(style='background-image: url(images/bg.png)')
+    .popup-inner.bg-image(style='background-image: url(images/bg-01.png); min-height: 140vh')
       .popup.popup-sm
         .unit.unit-xs.align-items-center
           .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
-              h5
-                | +
-                =" "
-                span.kill-count 1
-                =" "
-                | Kill
+              h5.text-bold + #[span.kill-count 1] Kill
               span.big.color-green Update
       br
       br
@@ -25,10 +20,31 @@ block page
           .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
-              h5
-                | +
-                =" "
-                span.kill-count 1
-                =" "
-                | Kill
+              h5.text-bold + #[span.kill-count 1] Kill
               span.big.color-green Update
+      br
+      br
+      .popup
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content
+              h5 Match started
+        .popup-body
+          h6.color-black Your challange objectives:
+          ul.list.big.inset-left-20.inset-sm-left-40
+            li - Get as much #[span.text-bold kills] as possible
+            li - Time limit - #[span.text-bold 20 minutes]
+      br
+      br
+      .popup.active
+        .unit.unit-xs.align-items-center
+          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-body
+            .popup-content
+              h5 Match started
+        .popup-body
+          h6.color-black Your challange objectives:
+          ul.list.big.inset-left-20.inset-sm-left-40
+            li - Get as much #[span.text-bold kills] as possible
+            li - Time limit - #[span.text-bold 20 minutes]

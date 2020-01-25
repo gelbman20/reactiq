@@ -32,6 +32,18 @@
     transform: translateX(77%);
   }
 
+  &-body {
+
+    text-align: left;
+    border-top: 1px solid $gray-lighter;
+
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+  }
+
   .unit-body {
     width: 100%;
   }
@@ -48,6 +60,24 @@
   &.active {
     transform: translateX(0);
     opacity: 1;
+
+    .popup-body {
+      margin-top: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-top: 25px;
+      padding-bottom: 30px;
+      opacity: 1;
+      max-height: 800px;
+
+
+      @include media-breakpoint-up(sm) {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 32px;
+        padding-bottom: 37px;
+      }
+    }
   }
 
   &-content {

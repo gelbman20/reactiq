@@ -1,0 +1,13 @@
+.list {
+  > li + li  { margin-top: 15px; }
+
+  @include media-breakpoint-up(sm) {
+    > li + li  { margin-top: 24px; }
+  }
+}
+
+* + .list { margin-top: 20px; }
+
+@include media-breakpoint-up(sm) {
+  * + .list { margin-top: 38px; }
+}

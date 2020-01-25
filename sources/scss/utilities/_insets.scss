@@ -1,0 +1,5 @@
+.inset-left-20 { padding-left: 20px; }
+
+@include media-breakpoint-up(sm) {
+  .inset-sm-left-40 { padding-left: 40px; }
+}

@@ -1,12 +1,37 @@
+body {
+  overflow-x: hidden;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+  font-weight: $fw-base;
+  line-height: $lh-base;
+  color: $body;
+}
+
 h5 {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.2;
-  font-weight: 700;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 25px;
+  }
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
+  }
 }
 
 .big {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
+  }
 }
 
 h5 + .big { margin-top: 5px; }
