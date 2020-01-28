@@ -103,5 +103,6 @@ function cleanDir() {
   );
 }
 
+gulp.task('cleanDir', gulp.series(cleanDir));
 gulp.task('build', gulp.series(cleanDir, html, sassDoc, copy));
 gulp.task('watch', gulp.series(watch));
