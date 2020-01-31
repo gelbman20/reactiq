@@ -1,0 +1,25 @@
+{
+  "name": "reactiq",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gelbman20/reactiq.git"
+  },
+  "keywords": [
+    "reactiq"
+  ],
+  "author": "Andrii Helever <gelbman20@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gelbman20/reactiq/issues"
+  },
+  "homepage": "https://github.com/gelbman20/reactiq#readme"
+}
