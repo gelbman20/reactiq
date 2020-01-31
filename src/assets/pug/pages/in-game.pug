@@ -5,10 +5,10 @@ block variables
 
 block page
   .popup-wrapper
-    .popup-inner.bg-image(style='background-image: url(images/bg-01.png); min-height: 140vh')
+    .popup-inner.bg-image(style=`background-image: url(${require('../../images/bg-01.png').default});; min-height: 140vh`)
       .popup.popup-sm
         .unit.unit-xs.align-items-center
-          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-left: img(src=require('../../images/logo.png').default, width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
               h5.text-bold + #[span.kill-count 1] Kill
@@ -17,7 +17,7 @@ block page
       br
       .popup.popup-sm.active
         .unit.unit-xs.align-items-center
-          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-left: img(src=require('../../images/logo.png').default, width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
               h5.text-bold + #[span.kill-count 1] Kill
@@ -26,7 +26,7 @@ block page
       br
       .popup
         .unit.unit-xs.align-items-center
-          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-left: img(src=require('../../images/logo.png').default, width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
               h5 Match started
@@ -39,7 +39,7 @@ block page
       br
       .popup.active
         .unit.unit-xs.align-items-center
-          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-left: img(src=require('../../images/logo.png').default, width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
               h5 Match started

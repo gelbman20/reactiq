@@ -5,11 +5,11 @@ block variables
 
 block page
   .popup-wrapper
-    .popup-inner.bg-image(style='background-image: url(images/bg-02.png); min-height: 140vh')
+    .popup-inner.bg-image(style=`background-image: url(${require('../../images/bg-02.png').default}); min-height: 140vh`)
       br
       .popup.popup-lg
         .unit.unit-xs.align-items-center
-          .unit-left: img(src="images/logo.png", width="77", height="80", alt="Reactiq")
+          .unit-left: img(src=require('../../images/logo.png').default, width="77", height="80", alt="Reactiq")
           .unit-body
             .popup-content
               h5 Match ended - Summary
